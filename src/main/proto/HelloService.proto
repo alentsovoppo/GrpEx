@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-package com.alen.grpcex;
+package com.alen.grpcex.helloservice;
 
 message HelloRequest {
   int32 id = 1;
@@ -15,5 +15,5 @@ message HelloResponse {
 }
 
 service HelloService {
-  rpc hello(HelloRequest) returns(HelloResponse);
+  rpc hello(HelloRequest) returns(HelloResponse) {}
 }
